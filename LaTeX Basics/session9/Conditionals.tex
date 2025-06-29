@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{ifthen}      % Basic conditionals
+\usepackage{etoolbox}    % Advanced conditionals
+
+\newcommand{\scorecheck}[1]{%
+  \ifthenelse{#1 > 50}
+    {Pass: #1}
+    {Fail: #1}
+}
+
+\newcommand{\gradecheck}[1]{%
+  \ifnumcomp{#1}{>}{90}
+    {Grade: A}
+    {%
+      \ifnumcomp{#1}{>}{75}
+        {Grade: B}
+        {Grade: C}
+    }%
+}
+
+\begin{document}
+
+\section*{Simple Conditional Logic}
+
+\textbf{Score Result:} \scorecheck{51}
+
+\textbf{Score Result:} \scorecheck{72}
+
+\bigskip
+
+\textbf{Grade Result:} \gradecheck{95}
+
+\textbf{Grade Result:} \gradecheck{80}
+
+\textbf{Grade Result:} \gradecheck{50}
+
+\end{document}

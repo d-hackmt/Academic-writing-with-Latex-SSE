@@ -1,0 +1,51 @@
+\documentclass{article}
+
+\usepackage{verbatim} % Allows verbatim environment
+
+\title{Playing with Environments}
+\author{Beginner LaTeXian}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{The \texttt{quote} Environment}
+
+Use this when quoting someone or something in a nice indented block:
+
+\begin{quote}
+    "The important thing is not to stop questioning. Curiosity has its own reason for existence." — Albert Einstein
+\end{quote}
+
+Perfect for short quotations or single paragraphs!
+
+\section{The \texttt{verbatim} Environment}
+
+Want to show raw code or plain text without LaTeX trying to format it?
+
+Use \texttt{verbatim} like this:
+
+\begin{verbatim}
+\documentclass{article}
+\begin{document}
+Hello, world!
+\end{document}
+\end{verbatim}
+
+LaTeX will NOT interpret any of this — it prints it exactly as typed!
+
+\section{The \texttt{center} Environment}
+
+Want to center a line or block of text?
+
+\begin{center}
+    This line is beautifully centered!
+\end{center}
+
+You can even center:
+\begin{center}
+    \textbf{Bold Text}, \textit{Italics}, or \underline{Underlined Words}
+\end{center}
+
+\end{document}

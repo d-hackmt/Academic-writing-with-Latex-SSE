@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{multirow}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+\section*{Floating Table Example}
+
+Here is a floating table example showing programming languages.
+
+\begin{table}[h!]  % h! = here, strongly suggested
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Language} & \textbf{Creator} & \textbf{Year} \\
+\hline
+Python   & Guido van Rossum & 1991 \\
+Java     & James Gosling    & 1995 \\
+C++      & Bjarne Stroustrup & 1985 \\
+\hline
+\end{tabular}
+\caption{Popular Programming Languages and Their Creators}
+\label{tab:languages}
+\end{table}
+
+We can now refer to Table~\ref{tab:languages} anywhere in the text!
+
+\end{document}

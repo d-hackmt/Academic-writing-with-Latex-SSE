@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+
+\section{Introduction}
+\label{sec:intro}
+
+Welcome! This is the introduction. We'll refer back to this section later.
+
+\section{Figures and Labels}
+\label{sec:figs}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.4\textwidth]{duck.png}
+\caption{An duck image}
+\label{fig:lab_ref}
+\end{figure}
+
+Figure~\ref{fig:lab_ref} shows a simple duck image.
+
+\section{Recap}
+As we saw in Section~\ref{sec:intro}, LaTeX makes organizing easy.
+
+\end{document}

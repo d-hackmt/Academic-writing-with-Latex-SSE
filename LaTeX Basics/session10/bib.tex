@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+
+\usepackage{lipsum} % For sample text
+\usepackage{hyperref} % Optional: makes references clickable
+
+\title{Understanding LaTeX Bibliographies}
+\author{Student of LaTeX}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Writing academic content requires proper citation. Thankfully, LaTeX provides us tools for citing sources like this~\cite{lamport94} and this~\cite{knuth84}.
+
+\section{History of \TeX{}}
+Donald Knuth created the \TeX{} typesetting system~\cite{knuth84} which revolutionized academic publishing.
+
+\section{What is \LaTeX?}
+\LaTeX{} was later built on top of \TeX{} to make it more user-friendly~\cite{lamport94}.
+
+\section{Conclusion}
+We can cite multiple sources at once too~\cite{lamport94,knuth84,goossens93}.
+
+\begin{thebibliography}{9}
+
+\bibitem{lamport94}
+Leslie Lamport.  
+\textit{\LaTeX: A Document Preparation System}.  
+Addison-Wesley, Second Edition, 1994.
+
+\bibitem{knuth84}
+Donald E. Knuth.  
+\textit{The \TeX{}book}.  
+Addison-Wesley, 1984.
+
+\bibitem{goossens93}
+Michel Goossens, Frank Mittelbach, and Alexander Samarin.  
+\textit{The \LaTeX\ Companion}.  
+Addison-Wesley, 1993.
+
+\end{thebibliography}
+
+\end{document}

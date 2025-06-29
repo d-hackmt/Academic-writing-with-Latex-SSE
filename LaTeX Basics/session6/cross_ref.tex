@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{graphicx} % For images if needed
+\usepackage{hyperref} % Makes references clickable
+
+\title{Cross-Referencing Example}
+\author{Student of LaTeX}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\label{sec:intro}
+Welcome to the world of \LaTeX! In this document, we’ll explore how to refer to other sections, figures, and even pages.
+
+\section{Theory}
+\label{sec:theory}
+This section contains all the theory we need to understand cross-referencing.
+
+\subsection{Why Cross-Referencing?}
+It helps you automatically link to sections like **Section~\ref{sec:results}** or **Figure~\ref{fig:rocket}** and keeps everything updated — no manual editing needed!
+
+\section{Results}
+\label{sec:results}
+We now present our results. Remember how we discussed theory in **Section~\ref{sec:theory}**?
+
+Also, the introduction is on **page~\pageref{sec:intro}**.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{example-image} % A placeholder image
+    \caption{A sample rocket image}
+    \label{fig:rocket}
+\end{figure}
+
+We refer to our image as **Figure~\ref{fig:rocket}**.
+
+\section{Conclusion}
+You’ve just learned how to:
+\begin{itemize}
+    \item Label sections, figures: `\label{}` ��
+    \item Reference them: `\ref{}`
+    \item Show page numbers: `\pageref{}` 
+\end{itemize}
+
+\end{document}

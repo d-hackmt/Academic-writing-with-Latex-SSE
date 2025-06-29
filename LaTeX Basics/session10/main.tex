@@ -1,0 +1,19 @@
+\documentclass[12pt]{article}
+
+\usepackage{hyperref}  % optional
+\title{LaTeX with BibTeX}
+\author{Student Author}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+LaTeX is used for typesetting scientific documents~\cite{lamport94}. 
+\TeX{} was developed by Knuth~\cite{knuth84}.
+
+\bibliographystyle{plain}  % Style: plain, alpha, ieee, etc.
+\bibliography{refs}        % refs.bib (no .bib extension here)
+
+\end{document}

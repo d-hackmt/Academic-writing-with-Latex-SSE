@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{multirow}     % For merging rows
+\usepackage[margin=1in]{geometry}  % Just for neat page layout
+
+\begin{document}
+
+\section*{All-in-One Table: Fruits & Details}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{4}{|c|}{\textbf{Fruits Information Table}} \\
+\hline
+\textbf{Category} & \textbf{Fruit} & \textbf{Color} & \textbf{Taste} \\
+\hline
+\multirow{2}{*}{Citrus} & Orange & Orange & Tangy \\
+                        & Lemon  & Yellow & Sour \\
+\hline
+\multirow{2}{*}{Berries} & Strawberry & Red & Sweet \\
+                         & Blueberry  & Blue & Sweet \\
+\hline
+\multirow{2}{*}{Tropical} & Mango & Yellow & Very Sweet \\
+                          & Pineapple & Brown-Yellow & Sweet-Sour \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}

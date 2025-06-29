@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Math Environments in LaTeX}
+
+\subsection*{1. Equation (with Label and Reference)}
+We begin with Einstein's equation:
+
+\begin{equation}
+  \label{eq:einstein}
+  E = mc^2
+\end{equation}
+
+As shown in Equation~\eqref{eq:einstein}, energy equals mass times the speed of light squared.
+
+\subsection*{2. Align (with Labels and References)}
+Let's align two related expressions:
+
+\begin{align}
+  a &= b + c \label{eq:align1} \\
+  x &= y + z \label{eq:align2}
+\end{align}
+
+Referencing: Equation~\eqref{eq:align1} and Equation~\eqref{eq:align2} demonstrate alignment.
+
+\subsection*{3. Gather (with Labels and Reference)}
+Now some famous standalone equations:
+
+\begin{gather}
+  x^2 + y^2 = r^2 \label{eq:gather1} \\
+  e^{i\pi} + 1 = 0 \label{eq:gather2}
+\end{gather}
+
+Equation~\eqref{eq:gather1} is a circle, and Equation~\eqref{eq:gather2} is Euler’s identity.
+
+\end{document}

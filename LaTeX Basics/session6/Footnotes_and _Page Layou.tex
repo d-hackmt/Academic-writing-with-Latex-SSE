@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+
+% ------------------- Packages -------------------
+\usepackage[a4paper, margin=1in]{geometry} % Page layout
+\usepackage{fancyhdr}                      % Custom headers and footers
+\usepackage{lipsum}                        % Dummy text
+\usepackage{graphicx}                      % For images (if needed)
+
+% ------------------- Header/Footer Setup -------------------
+\pagestyle{fancy}
+\fancyhf{}  % Clear all header/footer fields
+
+\fancyhead[L]{\textit{LaTeX Tutorial}}    % Left header
+\fancyhead[C]{\textbf{Session 6}}         % Center header
+\fancyhead[R]{Page \thepage}              % Right header
+
+\fancyfoot[C]{\textcopyright~
+2025 LaTeX Learner's Hub}  % Footer center
+
+% ------------------- Document Info -------------------
+\title{Formatting Like a Pro in \LaTeX}
+\author{Student of LaTeX}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+LaTeX is amazing for creating professional documents. This file demonstrates how to format margins, use footnotes\footnote{Footnotes appear at the bottom of the page.}, and set stylish headers and footers.
+
+\section{Margins and Layout}
+The \texttt{geometry} package lets you adjust margins like a pro. This document uses a margin of 1 inch on all sides, which is common for printing and academic work.
+
+You can also tweak individual margins:
+\begin{verbatim}
+\usepackage[top=1in, bottom=1in, left=1.5in, right=1in]{geometry}
+\end{verbatim}
+
+\section{Footnotes}
+Footnotes help keep your document clean while adding extra information.\footnote{Great for citations, quick notes, or fun facts!}
+
+For example, the word \textit{LaTeX} comes from Lamport TeX.\footnote{Developed by Leslie Lamport based on Donald Knuth's TeX.}
+
+\section{Headers and Footers}
+With the \texttt{fancyhdr} package, we made the top of this page display the tutorial name, session number, and page number. At the bottom, there’s a custom copyright.
+
+You can mix and match:
+\begin{itemize}
+  \item Left header for document type
+  \item Center header for section name or date
+  \item Right header for page number
+  \item Footer for anything from quotes to version numbers!
+\end{itemize}
+
+\section{Sample Content for Layout}
+\lipsum[1-2]  % Generates random text for layout testing
+
+\end{document}

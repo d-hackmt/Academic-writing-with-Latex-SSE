@@ -1,0 +1,33 @@
+\documentclass{article}
+
+% Required packages
+\usepackage{amsmath, amssymb}    % For math commands
+\usepackage{tcolorbox}           % For custom environment boxes
+
+% Custom command without argument
+\newcommand{\R}{\mathbb{R}}       % Shortcut for real numbers symbol
+
+% Custom command with 1 argument
+\newcommand{\sq}[1]{#1^2}         % Square of a number
+
+% Custom environment: "important"
+\newenvironment{important}{
+  \begin{tcolorbox}[colback=green!10, colframe=blue!70!black, title=Important]
+}{
+  \end{tcolorbox}
+}
+
+\begin{document}
+
+\section*{Custom Commands and Environments}
+
+Here's a symbol for the set of real numbers: $\R$
+
+Here's how our square function works: $\sq{6} = 36$
+
+\begin{important}
+This is a custom environment!  
+You can highlight key notes, warnings, or reminders using this box.
+\end{important}
+
+\end{document}
